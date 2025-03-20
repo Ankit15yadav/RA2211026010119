@@ -26,7 +26,7 @@ const Feed: React.FC = () => {
 
     useEffect(() => {
         fetchLatestPosts();
-        const interval = setInterval(fetchLatestPosts, 10000); // make call after every 10 seconds
+        const interval = setInterval(fetchLatestPosts, 10000); // Poll every 10 seconds
         return () => clearInterval(interval);
     }, []);
 

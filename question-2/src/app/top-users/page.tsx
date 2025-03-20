@@ -32,6 +32,7 @@ const TopUsers: React.FC = () => {
     if (error) return <div className="p-4 text-red-500">{error}</div>
 
     return (
+
         <div className="p-4">
             <h1 className="text-2xl font-bold mb-4">Top Users</h1>
             {/* Responsive grid for user cards */}
